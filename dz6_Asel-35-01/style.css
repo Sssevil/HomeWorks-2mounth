@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: silver;
+    padding: 20px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    margin: 0 auto;
+}
+
+input {
+    border: 2px solid teal;
+    font-size: 20px;
+    height: 40px;
+    width: 500px;
+    padding-left: 5px;
+}
+
+#create_button {
+    width: 240px;
+    height: 40px;
+    border: 2px solid teal;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+
+#todo_list {
+    margin: 0 auto;
+    width: 750px;
+    padding-bottom: 20px;
+}
+
+.block_text {
+    width: 100%;
+    border: 2px solid teal;
+    padding: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3 {
+    font-size: 30px;
+}
+.div_button {
+    display: flex;
+    width: 320px;
+    height: 100%;
+    justify-content: space-between;
+}
+.delete_button {
+    width: 150px;
+    height: 40px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.edit_button {
+    width: 150px;
+    height: 40px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle{
+    text-decoration: line-through;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+.modal_delete {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 120px;
+    border-radius: 6px;
+}
+
+
+.modal_title {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal_buttons, .modal_edit_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn_ok, .btn_edit_ok {
+    padding: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn_no, .btn_edit_no {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.modal_edit {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    position: fixed;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+}
+
