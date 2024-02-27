@@ -1,0 +1,40 @@
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 12px 45px 0 rgba(0, 0, 0, 0.09);
+    position: relative;
+}
+
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.hide {
+    background: gray;
+}
